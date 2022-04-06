@@ -1,0 +1,48 @@
+// Primary Colors
+$pri-light-cyan: hsl(193, 38%, 86%);
+$pri-neon-green: hsl(150, 100%, 66%);
+
+// Neutrals colors
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+// Body
+$fontSZ: 28px;
+
+// Font
+$font: 'Manrope', sans-serif;
+$fontWights: 800;
+
+// Import
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+// General styles
+* {
+    body {
+        background: $dark-blue;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .card {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+        }
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            a {
+                color: hsl(228, 45%, 44%);
+            }
+        }
+    }
+}
